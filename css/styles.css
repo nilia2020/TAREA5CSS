@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+    --fuente1: "Roboto", sans-serif;
+    --color-primario: rgb(92, 13, 68);
+    --color-secundario: rgb(109, 50, 205);
+    --color-terciario: rgb(247, 230, 243);
+    --sombra-naranja: rgb(231, 131, 48);
+}
+
+body {
+    font-family: var(--fuente1);
+    background: linear-gradient(45deg, rgb(250, 230, 230), rgb(230, 230, 250));
+    margin: 2vw;
+}
+
+span {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+h1 {
+    padding: 0;
+    margin: 3vh 0;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 5px var(--color-secundario);
+    font-weight: 900;
+}
+
+h1:hover {
+    text-decoration: overline var(--color-primario);
+    cursor: not-allowed;
+}
+
+h2 {
+    text-align: center;
+    margin: 3vh 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: underline solid var(--color-secundario);
+}
+nav {
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    width: 15vw;
+    background-color: var(--color-primario);
+    padding: 4px;
+    margin-top: 24px;
+    margin-right: 2vw;
+    border-radius: 8px;
+    font-weight: 900;
+    line-height: 2;
+}
+
+li a {
+    color: var(--color-terciario);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+ul li:hover {
+    background-color: var(--color-secundario);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px var(--color-primario);
+}
+
+ol li {
+    list-style: disc;
+    list-style-type: upper-latin;
+    list-style-type: lower-greek;
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+    list-style: inside url("../img/start.png");
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.textos .align {
+    border: 1px dotted rgb(5, 5, 5)
+}
+
+.textos .align p:nth-child(2) {
+    text-align: center;
+}
+
+.textos .align p:nth-child(3) {
+    text-align: left;
+}
+
+.textos .align p:nth-child(4) {
+    text-align: right;
+}
+
+.textos .align p:nth-child(5) {
+    text-align: justify;
+}
+
+.textos .deco p:nth-child(2) {
+    text-decoration: dashed underline;
+}
+
+.textos .deco p:nth-child(3) {
+    text-decoration: wavy overline;
+}
+
+.textos .deco p:nth-child(4) {
+    text-decoration: line-through;
+}
+
+.textos .deco p:nth-child(5) {
+    text-decoration: underline double;
+}
+
+.textos .transfor p:nth-child(2) {
+    text-transform: lowercase;
+}
+.textos .transfor p:nth-child(3) {
+    text-transform: uppercase;
+}
+.textos .transfor p:nth-child(4) {
+    text-transform: capitalize;
+}
+.textos .transfor p:nth-child(5) {
+    text-transform: none;
+}
+.textos .over p {
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid var(--color-secundario);
+}
+
+.textos .over p:nth-child(2) {
+    text-overflow: clip;
+}
+
+.textos .over p:nth-child(3) {
+    text-overflow: ellipsis;
+}
+
+.textos .shadows p:nth-child(2) {
+    text-shadow: 3px 3px 8px var(--sombra-naranja);
+}
+.textos .shadows p:nth-child(3) {
+    text-shadow: 3px 3px var(--sombra-naranja);
+}
+
+.spacing .letter p:nth-child(2) {
+    letter-spacing: -2px;
+}
+
+.spacing .letter p:nth-child(4) {
+    letter-spacing: 0.2rem;
+}
+
+.spacing .letter p span {
+    letter-spacing: normal;
+}
