@@ -8,10 +8,27 @@
     --sombra-naranja: rgb(231, 131, 48);
 }
 
+html {
+    font-size: 24px;
+}
+
 body {
     font-family: var(--fuente1);
     background: linear-gradient(45deg, rgb(250, 230, 230), rgb(230, 230, 250));
-    margin: 2vw;
+}
+
+header {
+    height: 13vh;
+    background-color: rgb(250, 250, 250);
+    position: fixed;
+    border-radius: 8px;
+    width: 100%;
+}
+
+section {
+    width: 98vw;
+    margin: 0 auto;
+    padding-top: 15vh;
 }
 
 span {
@@ -26,6 +43,18 @@ h1 {
     font-size: 1.8rem;
     text-shadow: 2px 2px 5px var(--color-secundario);
     font-weight: 900;
+}
+
+h1 span:nth-child(1) {
+    font-size: 1.7rem;
+    text-decoration: underline dotted;
+    text-shadow: none;
+}
+
+h1 span:nth-child(2) {
+    font-size: 1.7rem;
+    text-decoration: underline wavy;
+    text-shadow: none;
 }
 
 h1:hover {
@@ -49,37 +78,34 @@ nav {
     text-align: center;
 }
 
-ul li {
+header ul {
+    background-color: var(--color-primario);
+    border-radius: 0 0 8px 8px;
+    height: 6vh;
+}
+
+header ul li {
     display: inline-block;
     width: 15vw;
-    background-color: var(--color-primario);
     padding: 4px;
-    margin-top: 24px;
-    margin-right: 2vw;
+    margin: 1.5vh auto;
     border-radius: 8px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 2;
 }
 
 li a {
     color: var(--color-terciario);
+    font-size: 1.1rem;
     text-decoration: none;
     letter-spacing: 2px;
+    line-height: 1.5rem;
+    height: 3vh;
 }
 
-ul li:hover {
-    background-color: var(--color-secundario);
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px var(--color-primario);
-}
-
-ol li {
-    list-style: disc;
-    list-style-type: upper-latin;
-    list-style-type: lower-greek;
-    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
-    list-style: inside url("../img/start.png");
+li a:hover {
+    font-size: 1.2rem;
+    text-decoration: underline 3px var(--color-secundario);
 }
 
 p {
@@ -88,8 +114,12 @@ p {
     line-height: 1.5;
 }
 
+.textos {
+    padding-top: 15vh;
+}
+
 .textos .align {
-    border: 1px dotted rgb(5, 5, 5)
+    border: 1px dotted rgb(5, 5, 5);
 }
 
 .textos .align p:nth-child(2) {
@@ -130,12 +160,15 @@ p {
 .textos .transfor p:nth-child(3) {
     text-transform: uppercase;
 }
+
 .textos .transfor p:nth-child(4) {
     text-transform: capitalize;
 }
+
 .textos .transfor p:nth-child(5) {
     text-transform: none;
 }
+
 .textos .over p {
     width: 500px;
     white-space: nowrap;
@@ -168,4 +201,123 @@ p {
 
 .spacing .letter p span {
     letter-spacing: normal;
+}
+
+.spacing .words p:nth-child(2) {
+    word-spacing: 15px;
+}
+
+.spacing .words p:nth-child(3) {
+    word-spacing: normal;
+}
+
+.spacing .words p:nth-child(4) {
+    word-spacing: 2rem;
+}
+
+.wraps p {
+    width: 25%;
+    border: 1px solid var(--color-secundario);
+}
+
+.wraps p:nth-child(3) {
+    word-wrap: normal;
+}
+
+.wraps p:nth-child(4) {
+    word-wrap: break-word;
+}
+
+.lists {
+    font-weight: 800;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: underline solid var(--color-primario);
+    font-style: oblique;
+}
+/* ol li {
+    list-style: disc;
+    list-style-type: upper-latin;
+    list-style-type: lower-greek;
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+    list-style: inside url("../img/start.png");
+} */
+
+.lists ol,
+.lists ul {
+    display: inline-block;
+    margin-left: 45%;
+    background-color: bisque;
+}
+
+.lists .ordered .decimal li {
+    list-style: inside decimal;
+}
+
+.lists .ordered .alpha li {
+    list-style: outside lower-alpha;
+}
+
+.lists .ordered .greek li {
+    list-style: lower-greek;
+}
+
+.lists .unsorted .square li {
+    list-style-type: square;
+}
+
+.lists .unsorted ul {
+    background-color: transparent;
+}
+
+.lists .unsorted .images li {
+    list-style: url("../img/start.png");
+    background-color: transparent;
+}
+
+.borders li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    height: 15vh;
+    border: 5px black;
+    padding-top: 10vh;
+    font-weight: 800;
+    margin: 0 2% 2% 5%;
+}
+
+.borders li:nth-child(2) {
+    border: dotted;
+}
+
+.borders li:nth-child(3) {
+    border: dashed;
+}
+
+.borders li:nth-child(4) {
+    border: solid;
+}
+
+.borders li:nth-child(5) {
+    border: double;
+}
+
+.borders li:nth-child(6) {
+    border: ridge;
+}
+
+.borders li:nth-child(7) {
+    border: groove;
+}
+
+.borders li:nth-child(8) {
+    border: inset;
+}
+
+.borders li:nth-child(9) {
+    border: outset;
 }
